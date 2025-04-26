@@ -1,3 +1,7 @@
+mod test1;
+mod test2;
+// 結合テストは/testsディレクトリ
+
 fn main() {
-  println!("\nEnd of main function");
+  println!("Hello, world!");
 }

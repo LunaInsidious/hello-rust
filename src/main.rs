@@ -1,5 +1,6 @@
 use ferris_says::say;
 use std::io::{BufWriter, stdout};
+mod root_use;
 
 fn main() {
   let stdout = stdout();
@@ -8,4 +9,6 @@ fn main() {
 
   let mut writer = BufWriter::new(stdout.lock());
   say(&message, width, &mut writer).unwrap();
+
+  root_use::hoge::main();
 }
